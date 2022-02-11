@@ -2,7 +2,15 @@
 // #define Builder
 // #define Factory_Method
 // #define Prototype
-#define Singleton
+// #define Singleton
+
+#define Adapter
+#define Bridge
+#define Composite
+#define Decoretor
+#define Facade
+#define Flyweight
+#define Proxy
 
 using DesignPatterns_For_CSharp.Creational_Patterns.Abstract_Factory;
 using DesignPatterns_For_CSharp.Creational_Patterns.Builder;
@@ -10,7 +18,11 @@ using DesignPatterns_For_CSharp.Creational_Patterns.Factory_Method;
 using DesignPatterns_For_CSharp.Creational_Patterns.Prototype;
 using DesignPatterns_For_CSharp.Creational_Patterns.Singleton;
 
+using DesignPatterns_For_CSharp.Structural_Patterns.Adapter;
+
 Console.WriteLine("Hello, World!");
+
+#region Creational Patterns
 
 #if Abstract_Factory
 AbstractFactoryPatternDemo.Enter();
@@ -31,3 +43,38 @@ PrototypePatternDemo.Enter();
 #if Singleton
 SingletonPatternDemo.Enter();
 #endif
+
+#endregion Creational Patterns
+
+
+#region Structural Patterns
+
+#if Adapter
+AdapterPatternDemo.Enter();
+#endif
+
+#if Bridge
+
+#endif
+
+#if Composite
+
+#endif
+
+#if Decoretor
+
+#endif
+
+#if Facade
+
+#endif
+
+#if Flyweight
+
+#endif
+
+#if Proxy
+
+#endif
+
+#endregion Structural_Patterns
