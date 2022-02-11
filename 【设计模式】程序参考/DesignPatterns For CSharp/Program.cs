@@ -1,8 +1,10 @@
-﻿#define Abstract_Factory
-#define Builder
+﻿// #define Abstract_Factory
+// #define Builder
+// #define Factory_Method
 
 using DesignPatterns_For_CSharp.Creational_Patterns.Abstract_Factory;
 using DesignPatterns_For_CSharp.Creational_Patterns.Builder;
+using DesignPatterns_For_CSharp.Creational_Patterns.Factory_Method;
 
 Console.WriteLine("Hello, World!");
 
@@ -13,3 +15,8 @@ AbstractFactoryPatternDemo.Enter();
 #if Builder
 BuilderPatternDemo.Enter();
 #endif
+
+#if Factory_Method
+FactoryMethodPatternDemo.Enter();
+#endif
+
