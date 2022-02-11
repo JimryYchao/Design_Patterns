@@ -4,8 +4,8 @@
 // #define Prototype
 // #define Singleton
 
-#define Adapter
-#define Bridge
+// #define Adapter
+// #define Bridge
 #define Composite
 #define Decoretor
 #define Facade
@@ -19,6 +19,7 @@ using DesignPatterns_For_CSharp.Creational_Patterns.Prototype;
 using DesignPatterns_For_CSharp.Creational_Patterns.Singleton;
 
 using DesignPatterns_For_CSharp.Structural_Patterns.Adapter;
+using DesignPatterns_For_CSharp.Structural_Patterns.Bridge;
 
 Console.WriteLine("Hello, World!");
 
@@ -54,7 +55,7 @@ AdapterPatternDemo.Enter();
 #endif
 
 #if Bridge
-
+BridgePatternDemo.Enter();
 #endif
 
 #if Composite
