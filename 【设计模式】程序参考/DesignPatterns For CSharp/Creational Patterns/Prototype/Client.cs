@@ -21,11 +21,11 @@ namespace DesignPatterns_For_CSharp.Creational_Patterns.Prototype
         {
             return shapeMap.Remove(key);
         }
-        public Shape getShape(string Key)
+        public  Shape getShape(string Key)
         {
             if (!shapeMap.TryGetValue(Key, out Prototype proto))
             {
-                Console.WriteLine("Clone shape failed");
+                Console.WriteLine($"Clone {Key} failed");
                 return null;
             }
             // 自行选择浅拷贝或深拷贝
