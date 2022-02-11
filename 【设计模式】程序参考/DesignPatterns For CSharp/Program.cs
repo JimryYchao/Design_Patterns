@@ -5,7 +5,7 @@
 // #define Singleton
 
 // #define Adapter
-// #define Bridge
+#define Bridge
 #define Composite
 #define Decoretor
 #define Facade
