@@ -166,3 +166,12 @@
 5. 不能应对多线程环境:在多线程环境下，使用Singleton模式仍然有可能得到Singleton类的多个实例对象。
 
 ---
+
+# 9. 有关创建型模式的讨论
+
+- Singleton 模式解决的是实体对象个数的问题。除了 Singleton 之外，其他创建型模式解决的都是 new 所带来的耦合关系。
+- Factory Method, Abstract Factory, Builder 都需要一个额外的工厂类来负责实例化 “易变对象”。
+- Prototype 则是通过原型(一个特殊的工厂类)来克隆“易变对象。
+- 如果遇到 “易变类”，起初的设计通常从 Factory Method 开始，当遇到更多的复杂变化时，再考虑重构为其他三种工厂模式 (Abstract Factory，Builder，Prototype )。
+
+---

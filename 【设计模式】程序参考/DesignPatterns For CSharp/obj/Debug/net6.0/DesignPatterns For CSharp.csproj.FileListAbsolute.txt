@@ -13,3 +13,5 @@ D:\JCWork\_WorkStats_\【Learn】\【DP】设计模式\设计模式\【设计模
 D:\JCWork\_WorkStats_\【Learn】\【DP】设计模式\设计模式\【设计模式】程序参考\DesignPatterns For CSharp\obj\Debug\net6.0\ref\DesignPatterns For CSharp.dll
 D:\JCWork\_WorkStats_\【Learn】\【DP】设计模式\设计模式\【设计模式】程序参考\DesignPatterns For CSharp\obj\Debug\net6.0\DesignPatterns For CSharp.pdb
 D:\JCWork\_WorkStats_\【Learn】\【DP】设计模式\设计模式\【设计模式】程序参考\DesignPatterns For CSharp\obj\Debug\net6.0\DesignPatterns For CSharp.genruntimeconfig.cache
+D:\JCWork\_WorkStats_\【Learn】\【DP】设计模式\设计模式\【设计模式】程序参考\DesignPatterns For CSharp\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\JCWork\_WorkStats_\【Learn】\【DP】设计模式\设计模式\【设计模式】程序参考\DesignPatterns For CSharp\obj\Debug\net6.0\DesignPatterns For CSharp.csproj.CopyComplete

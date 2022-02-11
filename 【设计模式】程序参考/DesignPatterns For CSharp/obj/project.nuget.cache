@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "aTi0CDWf5C1qi98LoGbYbvKNAukwsnywxuXq22wSuEsyVuNl+d0S5SHEZDT+gOB/IXuaUyCWBm8HcUFawHHiOg==",
+  "dgSpecHash": "dt3M8v+M0tYC1poU1nc1wg00iwnGkOkFchcPnIFWcxJ1I6YpTEKscGyoyiSnDypk8z+nc65xxivvGMUM7Iv4qw==",
   "success": true,
   "projectFilePath": "D:\\JCWork\\_WorkStats_\\【Learn】\\【DP】设计模式\\设计模式\\【设计模式】程序参考\\DesignPatterns For CSharp\\DesignPatterns For CSharp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
