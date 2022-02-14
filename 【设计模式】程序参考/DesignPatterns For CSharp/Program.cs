@@ -7,8 +7,8 @@
 // #define Adapter
 // #define Bridge
 // #define Composite
-#define Decoretor
-#define Facade
+// #define Decoretor
+// #define Facade
 #define Flyweight
 #define Proxy
 
@@ -22,6 +22,7 @@ using DesignPatterns_For_CSharp.Structural_Patterns.Adapter;
 using DesignPatterns_For_CSharp.Structural_Patterns.Bridge;
 using DesignPatterns_For_CSharp.Structural_Patterns.Composite;
 using DesignPatterns_For_CSharp.Structural_Patterns.Decorator;
+using DesignPatterns_For_CSharp.Structural_Patterns.Facade;
 
 Console.WriteLine("Hello, World!");
 
@@ -69,7 +70,7 @@ DecoratorPatternDemo.Enter();
 #endif
 
 #if Facade
-
+FacadePatternDemo.Enter();
 #endif
 
 #if Flyweight
