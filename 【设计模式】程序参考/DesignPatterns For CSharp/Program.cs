@@ -23,6 +23,7 @@ using DesignPatterns_For_CSharp.Structural_Patterns.Bridge;
 using DesignPatterns_For_CSharp.Structural_Patterns.Composite;
 using DesignPatterns_For_CSharp.Structural_Patterns.Decorator;
 using DesignPatterns_For_CSharp.Structural_Patterns.Facade;
+using DesignPatterns_For_CSharp.Structural_Patterns.Flyweight;
 
 Console.WriteLine("Hello, World!");
 
@@ -74,7 +75,7 @@ FacadePatternDemo.Enter();
 #endif
 
 #if Flyweight
-
+FlyweightPatternDemo.Enter();
 #endif
 
 #if Proxy
