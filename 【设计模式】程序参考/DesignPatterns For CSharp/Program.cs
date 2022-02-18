@@ -9,8 +9,20 @@
 // #define Composite
 // #define Decoretor
 // #define Facade
-#define Flyweight
-#define Proxy
+// #define Flyweight
+// #define Proxy
+
+#define ChainOfResponsibility
+#define Command
+#define Interpreter
+#define Iterator
+#define Mediator
+#define Momento
+#define Observer
+#define State
+#define Strategy
+#define TemplateMethod
+#define Visitor
 
 using DesignPatterns_For_CSharp.Creational_Patterns.Abstract_Factory;
 using DesignPatterns_For_CSharp.Creational_Patterns.Builder;
@@ -24,6 +36,9 @@ using DesignPatterns_For_CSharp.Structural_Patterns.Composite;
 using DesignPatterns_For_CSharp.Structural_Patterns.Decorator;
 using DesignPatterns_For_CSharp.Structural_Patterns.Facade;
 using DesignPatterns_For_CSharp.Structural_Patterns.Flyweight;
+using DesignPatterns_For_CSharp.Structural_Patterns.Proxy;
+
+
 
 Console.WriteLine("Hello, World!");
 
@@ -79,7 +94,56 @@ FlyweightPatternDemo.Enter();
 #endif
 
 #if Proxy
+ProxyPatternDemo.Enter();
+#endif
+
+#endregion Structural Patterns
+
+
+#region  Behavioral Patterns
+
+#if ChainOfResponsibility
 
 #endif
 
-#endregion Structural_Patterns
+#if Command
+
+#endif
+
+#if Interpreter
+
+#endif
+
+#if Iterator
+
+#endif
+
+#if Mediator
+
+#endif
+
+#if Momento
+
+#endif
+
+#if Observer
+
+#endif
+
+#if State
+
+#endif
+
+#if Strategy
+
+#endif
+
+#if TemplateMethod
+
+#endif
+
+#if Visitor
+
+#endif
+
+#endregion Behavioral Patterns

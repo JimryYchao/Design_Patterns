@@ -73,7 +73,7 @@
 # 6. 代理模式优缺点
 
 - Proxy 在访问对象时引入了一定程度的间接性：
-  1. Remote Proxy 可以隐藏一个对象存在于不能地址空间的事实
+  1. Remote Proxy 可以隐藏一个对象存在于不同地址空间的事实
   2. Virtual Proxy 可以进行最优化，根据需求创建对象
   3. Protection 与 Smart Proxy 允许在访问对象时有一些附加的内务处理
 
@@ -106,7 +106,7 @@
 
 > 代码实现
 
-1. [C# 实现]()
+1. [C# 实现](/【设计模式】程序参考/DesignPatterns%20For%20CSharp/Structural%20Patterns/Proxy/Proxy.cs)
 2. ...
 
 ---
