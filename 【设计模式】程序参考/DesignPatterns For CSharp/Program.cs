@@ -38,9 +38,12 @@ using DesignPatterns_For_CSharp.Structural_Patterns.Facade;
 using DesignPatterns_For_CSharp.Structural_Patterns.Flyweight;
 using DesignPatterns_For_CSharp.Structural_Patterns.Proxy;
 
+using DesignPatterns_For_CSharp.Behavioral_Patterns.ChainOfResponsibility;
+
 
 
 Console.WriteLine("Hello, World!");
+
 
 #region Creational Patterns
 
@@ -103,23 +106,23 @@ ProxyPatternDemo.Enter();
 #region  Behavioral Patterns
 
 #if ChainOfResponsibility
-
+ChainOfResponsibilityPatternDemo.Enter();
 #endif
 
 #if Command
-
+//CommandPatternDemo.Enter();
 #endif
 
 #if Interpreter
-
+//InterpreterPatternDemo.Enter();
 #endif
 
 #if Iterator
-
+//IteratorPatternDemo.Enter();
 #endif
 
 #if Mediator
-
+//MediatorPatternDemo.Enter();
 #endif
 
 #if Momento
