@@ -19,12 +19,38 @@ namespace DesignPatterns_For_CSharp.Behavioral_Patterns.ChainOfResponsibility
 {
     public abstract class LoggerHandler
     {
-        public abstract int Level { get; protected set; }
+        public static int DEFAULT = 1;
+        public static int WARNING = 2;
+        public static int ERROR = 3;
 
+        private LoggerHandler nextLogger;
+        public int Level { get; private set; }
+        public LoggerHandler SetSupHandler(LoggerHandler logger)
+        {
+            logger.nextLogger = this;
+            return logger;
+        }
         public LoggerHandler(int level)
         {
             Level = level;
+            nextLogger = null;
         }
-        public abstract void Log(string message);
+        public virtual void Log(int level, string message)
+        {
+            if (level == Level)
+            {
+                Write(message);
+                return;
+            }
+            if (nextLogger != null)
+                nextLogger.Log(level, message);
+            else
+                DefaultWrite(message);
+        }
+        protected abstract void Write(string message);
+        private void DefaultWrite(string message)
+        {
+            Console.WriteLine("Default Console: " + message);
+        }
     }
 }

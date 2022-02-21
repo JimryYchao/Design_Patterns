@@ -12,7 +12,7 @@
 // #define Flyweight
 // #define Proxy
 
-#define ChainOfResponsibility
+// #define ChainOfResponsibility
 #define Command
 #define Interpreter
 #define Iterator
