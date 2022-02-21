@@ -39,6 +39,7 @@ using DesignPatterns_For_CSharp.Structural_Patterns.Flyweight;
 using DesignPatterns_For_CSharp.Structural_Patterns.Proxy;
 
 using DesignPatterns_For_CSharp.Behavioral_Patterns.ChainOfResponsibility;
+using DesignPatterns_For_CSharp.Behavioral_Patterns.Command;
 
 
 
@@ -110,7 +111,7 @@ ChainOfResponsibilityPatternDemo.Enter();
 #endif
 
 #if Command
-//CommandPatternDemo.Enter();
+CommandPatternDemo.Enter();
 #endif
 
 #if Interpreter
