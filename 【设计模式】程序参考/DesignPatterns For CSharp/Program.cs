@@ -13,7 +13,7 @@
 // #define Proxy
 
 // #define ChainOfResponsibility
-#define Command
+// #define Command
 #define Interpreter
 #define Iterator
 #define Mediator
@@ -40,8 +40,7 @@ using DesignPatterns_For_CSharp.Structural_Patterns.Proxy;
 
 using DesignPatterns_For_CSharp.Behavioral_Patterns.ChainOfResponsibility;
 using DesignPatterns_For_CSharp.Behavioral_Patterns.Command;
-
-
+using DesignPatterns_For_CSharp.Behavioral_Patterns.Interpreter;
 
 Console.WriteLine("Hello, World!");
 
@@ -115,7 +114,7 @@ CommandPatternDemo.Enter();
 #endif
 
 #if Interpreter
-//InterpreterPatternDemo.Enter();
+InterpreterPatternDemo.Enter();
 #endif
 
 #if Iterator
