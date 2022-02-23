@@ -14,7 +14,7 @@
 
 // #define ChainOfResponsibility
 // #define Command
-#define Interpreter
+// #define Interpreter
 #define Iterator
 #define Mediator
 #define Momento
@@ -41,6 +41,7 @@ using DesignPatterns_For_CSharp.Structural_Patterns.Proxy;
 using DesignPatterns_For_CSharp.Behavioral_Patterns.ChainOfResponsibility;
 using DesignPatterns_For_CSharp.Behavioral_Patterns.Command;
 using DesignPatterns_For_CSharp.Behavioral_Patterns.Interpreter;
+using DesignPatterns_For_CSharp.Behavioral_Patterns.Iterator;
 
 Console.WriteLine("Hello, World!");
 
@@ -118,7 +119,7 @@ InterpreterPatternDemo.Enter();
 #endif
 
 #if Iterator
-//IteratorPatternDemo.Enter();
+IteratorPatternDemo.Enter();
 #endif
 
 #if Mediator
