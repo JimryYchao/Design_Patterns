@@ -97,10 +97,9 @@
 
   ![更改管理器](./img/观察者模式更改管理器.png)
 
-
 > 代码实现
 
-1. [C# 实现]()
+1. [C# 实现](/【设计模式】程序参考/DesignPatterns%20For%20CSharp/Behavioral%20Patterns/Observer/Observer.cs)
 2. ...
 
 ---

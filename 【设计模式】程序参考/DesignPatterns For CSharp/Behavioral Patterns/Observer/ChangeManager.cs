@@ -1,64 +1,99 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Observer
+﻿namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Observer
 {
-    public abstract class ChangeManager
+    public interface IChangeManager
     {
-        public abstract void Register(ISubject subject, IObserver observer);
-        public abstract void Unregister(ISubject subject, IObserver observer);
-        public abstract void Notify();
+        void Register(ISubject subject, IObserver observer);
+        void Unregister(ISubject subject, IObserver observer);
+        void Notify();
     }
     // Simple: 更新每一个目标的所有观察者
-    public class SimpleChangeManager : ChangeManager
+    public class SimpleChangeManager : IChangeManager
     {
-        protected Dictionary<ISubject, List<IObserver>> SOPairs;
-        public SimpleChangeManager()
+        IChangeManager instance;
+        ISubject subject;
+        List<IObserver> observers;
+
+        public SimpleChangeManager(ISubject subject)
         {
-            SOPairs = new Dictionary<ISubject, List<IObserver>>();
+            this.subject = subject;
+            observers = new List<IObserver>();
+            instance = this;
         }
-        public override void Register(ISubject subject, IObserver observer)
+        public void Notify()
         {
-            if (SOPairs.ContainsKey(subject))
-            {
-                if (!SOPairs[subject].Contains(observer))
-                    SOPairs[subject].Add(observer);
-            }
-            else
-                SOPairs.Add(subject, new List<IObserver>() { observer });
+            foreach (IObserver observer in observers)
+                observer.Update(subject);
         }
-        public override void Unregister(ISubject subject, IObserver observer)
+        public void ClearObserver()
         {
-            if (SOPairs.ContainsKey(subject))
-                SOPairs[subject].Remove(observer);
+            observers.Clear();
         }
-        public override void Notify()
+        public void Register(IObserver observer)
         {
-            foreach (var pair in SOPairs)
-            {
-                ISubject s = pair.Key;
-                for (int j = 0; j < pair.Value.Count; j++)
-                    pair.Value[j].Update(s);
-            }
+            instance.Register(subject, observer);
+        }
+        public void Unregister(IObserver observer)
+        {
+            instance.Unregister(subject, observer);
+        }
+
+        void IChangeManager.Register(ISubject subject, IObserver observer)
+        {
+            if (!observers.Contains(observer))
+                observers.Add(observer);
+        }
+        void IChangeManager.Unregister(ISubject subject, IObserver observer)
+        {
+            observers.Remove(observer);
         }
     }
     // DCG：一个观察者观察多个目标
-    public class DCGChangeManager : ChangeManager
+    public class DCGChangeManager : IChangeManager
     {
-        public override void Notify()
+        public readonly static DCGChangeManager Instance = new DCGChangeManager();
+        Dictionary<ISubject, List<IObserver>> SODic;
+        private DCGChangeManager()
+        {
+            SODic = new Dictionary<ISubject, List<IObserver>>();
+        }
+        public void Notify()
+        {
+            foreach (var item in SODic)
+                foreach (IObserver observer in item.Value)
+                    observer.Update(item.Key);
+        }
+        public void Register(ISubject subject, IObserver observer)
+        {
+            if (!SODic.ContainsKey(subject))
+            {
+                SODic.Add(subject, new List<IObserver>());
+                SODic[subject].Add(observer);
+            }
+            else if (!SODic[subject].Contains(observer))
+                SODic[subject].Add(observer);
+        }
+        public void Unregister(ISubject subject, IObserver observer)
+        {
+            if (SODic.TryGetValue(subject, out List<IObserver>? list))
+            {
+                if (list.Contains(observer))
+                    list.Remove(observer);
+            }
+        }
+    }
+    // 瞬发消息，报告状态
+    public class LoggerManager : IChangeManager
+    {
+        public readonly static LoggerManager Instance = new LoggerManager();
+        void IChangeManager.Notify()
         {
             throw new NotImplementedException();
         }
-
-        public override void Register(ISubject subject, IObserver observer)
+        public void Register(ISubject subject, IObserver observer)
         {
-            throw new NotImplementedException();
+            observer.Update(subject);
         }
-
-        public override void Unregister(ISubject subject, IObserver observer)
+        void IChangeManager.Unregister(ISubject subject, IObserver observer)
         {
             throw new NotImplementedException();
         }

@@ -1,23 +1,53 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Observer
+﻿namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Observer
 {
-    public class ConcreteObserver_1 : IObserver
+    public class LoginObserver : IObserver
     {
-        public void Update(ISubject subject)
+        public readonly static LoginObserver Instance = new LoginObserver();
+        void IObserver.Update(ISubject subject)
         {
-
+            if (subject is Subject loginAccount)
+                AccountData.Instance.LoginAccount(loginAccount.GetState(0), loginAccount.GetState(1));
         }
     }
-    public class ConcreteObserver_2 : IObserver
+    public class RegisterObserver : IObserver
     {
-        public void Update(ISubject subject)
+        public readonly static RegisterObserver Instance = new RegisterObserver();
+        void IObserver.Update(ISubject subject)
         {
-
+            if (subject is Subject register)
+                AccountData.Instance.RegisterAccount(register.GetState(0), register.GetState(1));
+        }
+    }
+    public class LoginSuccessful : IObserver
+    {
+        public readonly static LoginSuccessful Instance = new LoginSuccessful();
+        void IObserver.Update(ISubject subject)
+        {
+            Console.WriteLine("Login Successful");
+        }
+    }
+    public class LoginFailed : IObserver
+    {
+        public readonly static LoginFailed Instance = new LoginFailed();
+        void IObserver.Update(ISubject subject)
+        {
+            Console.WriteLine("Login Failed");
+        }
+    }
+    public class RegisterSuccessful : IObserver
+    {
+        public readonly static RegisterSuccessful Instance = new RegisterSuccessful();
+        void IObserver.Update(ISubject subject)
+        {
+            Console.WriteLine("Register-Account Successful");
+        }
+    }
+    public class RegisterFailed : IObserver
+    {
+        public readonly static RegisterFailed Instance = new RegisterFailed();
+        void IObserver.Update(ISubject subject)
+        {
+            Console.WriteLine("Register-Account Failed");
         }
     }
 }

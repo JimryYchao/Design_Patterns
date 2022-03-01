@@ -1,29 +1,51 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Observer
+﻿namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Observer
 {
-    public class ConcreteSubject : ISubject
+    public class Subject : ISubject
     {
-        ChangeManager changeMgr;
-        public ConcreteSubject(ChangeManager manager)
+        public readonly static Subject Instance = new Subject();
+        private string name = string.Empty;
+        private string password = string.Empty;
+        public void RegisterAccount(string name, string password)
         {
-            this.changeMgr = manager;
+            this.name = name;
+            this.password = password;
+            Attach(RegisterObserver.Instance);
+        }
+        public void LoginAccount(string name, string password)
+        {
+            this.name = name;
+            this.password = password;
+            Attach(LoginObserver.Instance);
+        }
+        public string GetState(int state)
+        {
+            switch (state)
+            {
+                case 0:
+                    return name;
+                case 1:
+                    return password;
+                default:
+                    return string.Empty;
+            }
+        }
+        SimpleChangeManager changeMgr;
+        public Subject()
+        {
+            changeMgr = new SimpleChangeManager(this);
         }
         public void Attach(IObserver o)
         {
-            changeMgr.Register(this, o);
+            changeMgr.Register(o);
         }
         public void Detach(IObserver o)
         {
-            changeMgr.Unregister(this, o);
+            changeMgr.Unregister(o);
         }
         public void Notify()
         {
-            changeMgr.Notify(); 
+            changeMgr.Notify();
+            changeMgr.ClearObserver();
         }
     }
 }
