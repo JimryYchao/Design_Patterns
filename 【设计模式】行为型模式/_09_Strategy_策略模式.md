@@ -61,20 +61,29 @@
 ---
 # 6. 策略模式优缺点
 
+1. 相关算法系列 Strategy 类层：为 Context 定义了一系列的可供重用的算法或行为
+2. 一个替代继承的方法：继承提供了另一种支持多种算法或行为的方法，但不能动态的更改算法
+3. 消除了一些条件语句：将行为封装在一个个独立的 Strategy 类中消除了这些条件语句
+4. 实现的选择 Strategy 模式：可以提供相同行为的不同实现，客户可以根据不同时间空间权衡取舍要求从不同策略中进行选择。
+5. 客户必须了解不同的 Strategy：一个客户要选择一个合适的 Strategy 就必须知道这些 Strategy 到底有何不同。
+6. strategy 和 Context 之间的通信开销：无论各个 ConcreteStrategy 实现的算法是简单还是复杂，它们都共享 Strategy 定义的接口。可能某些 ConcreteStrategy 不会都用到所有通过这个接口传递给它们的信息；简单的 ConcreteStrategy 可能不使用其中的任何信息。有时 Context 会创建和初始化一些永远不会用到的参数。如果存在这样问题，那么将需要在 Strategy 和 Context 之间更进行紧密的耦合。
+7. 增加了对象的数目：Strategy 增加了一个应用中的对象的数目。
 
 ---
 # 7. 实现
 
-
+1. 定义 Strategy 和 Context 接口：Strategy 和 Context 接口必须使得 ConcreteStrategy 能够有效的访问它所需要的 Context 中的任何数据。一种是让 Context 将数据放在参数中传递给 Strategy 操作；另一种是让 Context 将自身作为一个参数传递给 Strategy
+2. 使 Strategy 对象成为可选：Context 在访问某 Strategy 前先检查它是否存在；如果没有，那么Context执行缺省的行为。
 
 ---
 # 8. 设计要点
 
+- Strategy 及其子类为组件提供了一系列可重用的算法，从而可以使得类型在运行时方便地根据需要在各个算法之间进行切换。所谓封装算法，支持算法的变化。
+- Strategy 模式提供了用条件判断语句以外的另一种选择，消除条件判断语句，就是在解耦合。含有许多条件判断语句的代码通常都需要 Strategy 模式。
+- 与 State 类似，如果 Strategy 对象没有实例变量，那么各个上下文可以共享同一个 Strategy 对象，从而节省对象开销。
 
 ---
 # 9. 案例实现
-
-
 
 > 案例示意
 
@@ -88,6 +97,6 @@
 ---
 # 10. 相关模式
 
-
+- Flyweight：Strategy 经常是很好的轻量级对象。
 
 ---
