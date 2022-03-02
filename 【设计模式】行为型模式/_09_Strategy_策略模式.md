@@ -94,7 +94,7 @@
 
 > 代码实现
 
-1. [C# 实现]()
+1. [C# 实现](/【设计模式】程序参考/DesignPatterns%20For%20CSharp/Behavioral%20Patterns/Strategy/Strategy.cs)
 2. ...
 
 ---

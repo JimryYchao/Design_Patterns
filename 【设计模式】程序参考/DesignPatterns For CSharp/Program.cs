@@ -18,9 +18,9 @@
 // #define Iterator
 // #define Mediator
 // #define Memento
-#define Observer
-#define State
-#define Strategy
+// #define Observer
+// #define State
+// #define Strategy
 #define TemplateMethod
 #define Visitor
 
@@ -45,6 +45,8 @@ using DesignPatterns_For_CSharp.Behavioral_Patterns.Iterator;
 using DesignPatterns_For_CSharp.Behavioral_Patterns.Mediator;
 using DesignPatterns_For_CSharp.Behavioral_Patterns.Memento;
 using DesignPatterns_For_CSharp.Behavioral_Patterns.Observer;
+using DesignPatterns_For_CSharp.Behavioral_Patterns.State;
+using DesignPatterns_For_CSharp.Behavioral_Patterns.Strategy;
 
 Console.WriteLine("Hello, World!");
 
@@ -138,11 +140,11 @@ ObserverPatternDemo.Enter();
 #endif
 
 #if State
-
+StatePatternDemo.Enter();
 #endif
 
 #if Strategy
-
+StrategyPatternDemo.Enter();
 #endif
 
 #if TemplateMethod
