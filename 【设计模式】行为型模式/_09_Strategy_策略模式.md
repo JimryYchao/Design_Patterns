@@ -85,6 +85,9 @@
 ---
 # 9. 案例实现
 
+- 我们将创建一个定义活动的 Strategy 接口和实现了 Strategy 接口的实体策略类。Context 是一个使用了某种策略的类。
+- StrategyPatternDemo，我们的演示类使用 Context 和策略对象来演示 Context 在它所配置或使用的策略改变时的行为变化。
+
 > 案例示意
 
   ![案例](img/策略模式案例.png)
