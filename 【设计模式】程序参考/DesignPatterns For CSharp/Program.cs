@@ -21,7 +21,7 @@
 // #define Observer
 // #define State
 // #define Strategy
-#define TemplateMethod
+// #define TemplateMethod
 #define Visitor
 
 using DesignPatterns_For_CSharp.Creational_Patterns.Abstract_Factory;
@@ -47,6 +47,7 @@ using DesignPatterns_For_CSharp.Behavioral_Patterns.Memento;
 using DesignPatterns_For_CSharp.Behavioral_Patterns.Observer;
 using DesignPatterns_For_CSharp.Behavioral_Patterns.State;
 using DesignPatterns_For_CSharp.Behavioral_Patterns.Strategy;
+using DesignPatterns_For_CSharp.Behavioral_Patterns.Template_Method;
 
 Console.WriteLine("Hello, World!");
 
@@ -148,7 +149,7 @@ StrategyPatternDemo.Enter();
 #endif
 
 #if TemplateMethod
-
+TemplateMethodPatternDemo.Enter();
 #endif
 
 #if Visitor
