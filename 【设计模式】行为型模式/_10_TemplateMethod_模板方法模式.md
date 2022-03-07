@@ -1,21 +1,21 @@
-# Interpreter Pattern
+# Template Method Pattern
 
 ---
 
-- [Interpreter Pattern](#interpreter-pattern)
-- [1. 解释器模式(Interpreter)](#1-解释器模式interpreter)
+- [Template Method Pattern](#template-method-pattern)
+- [1. 模板方法模式(Template Method)](#1-模板方法模式template-method)
 - [2. 意图](#2-意图)
 - [3. 动机](#3-动机)
 - [4. 适用性](#4-适用性)
 - [5. 结构与参与者](#5-结构与参与者)
-- [6. 解释器模式优缺点](#6-解释器模式优缺点)
+- [6. 模板方法模式优缺点](#6-模板方法模式优缺点)
 - [7. 实现](#7-实现)
 - [8. 设计要点](#8-设计要点)
 - [9. 案例实现](#9-案例实现)
 - [10. 相关模式](#10-相关模式)
 
 ---
-# 1. 解释器模式(Interpreter)
+# 1. 模板方法模式(Template Method)
 
 
 
@@ -38,9 +38,9 @@
 ---
 # 5. 结构与参与者
 
-> 命令模式
+> 模板方法模式
 
-  ![命令模式](img/命令模式设计.png)
+  ![模板方法模式](img/模板方法模式设计.png)
 
 > 参与者
 
@@ -54,7 +54,7 @@
   ![对象交互]()
 
 ---
-# 6. 解释器模式优缺点
+# 6. 模板方法模式优缺点
 
 
 ---
@@ -73,7 +73,7 @@
 
 > 案例示意
 
-  ![案例](img/命令模式案例.png)
+  ![案例](img/模板方法模式案例.png)
 
 > 代码实现
 

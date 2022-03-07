@@ -16,7 +16,7 @@
 // #define Command
 // #define Interpreter
 // #define Iterator
-// #define Mediator
+#define Mediator
 // #define Memento
 // #define Observer
 // #define State
