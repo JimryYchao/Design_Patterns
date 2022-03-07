@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\【JC】工作簿\\【DesignPatterns】设计模式\\Design_Patterns\\【设计模式】程序参考\\DesignPatterns For CSharp\\DesignPatterns For CSharp.csproj": {}
+    "D:\\JCWork\\_WorkStats_\\【Learn】\\【DP】设计模式\\设计模式\\【设计模式】程序参考\\DesignPatterns For CSharp\\DesignPatterns For CSharp.csproj": {}
   },
   "projects": {
-    "E:\\【JC】工作簿\\【DesignPatterns】设计模式\\Design_Patterns\\【设计模式】程序参考\\DesignPatterns For CSharp\\DesignPatterns For CSharp.csproj": {
+    "D:\\JCWork\\_WorkStats_\\【Learn】\\【DP】设计模式\\设计模式\\【设计模式】程序参考\\DesignPatterns For CSharp\\DesignPatterns For CSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\【JC】工作簿\\【DesignPatterns】设计模式\\Design_Patterns\\【设计模式】程序参考\\DesignPatterns For CSharp\\DesignPatterns For CSharp.csproj",
+        "projectUniqueName": "D:\\JCWork\\_WorkStats_\\【Learn】\\【DP】设计模式\\设计模式\\【设计模式】程序参考\\DesignPatterns For CSharp\\DesignPatterns For CSharp.csproj",
         "projectName": "DesignPatterns For CSharp",
-        "projectPath": "E:\\【JC】工作簿\\【DesignPatterns】设计模式\\Design_Patterns\\【设计模式】程序参考\\DesignPatterns For CSharp\\DesignPatterns For CSharp.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\【JC】工作簿\\【DesignPatterns】设计模式\\Design_Patterns\\【设计模式】程序参考\\DesignPatterns For CSharp\\obj\\",
+        "projectPath": "D:\\JCWork\\_WorkStats_\\【Learn】\\【DP】设计模式\\设计模式\\【设计模式】程序参考\\DesignPatterns For CSharp\\DesignPatterns For CSharp.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "D:\\JCWork\\_WorkStats_\\【Learn】\\【DP】设计模式\\设计模式\\【设计模式】程序参考\\DesignPatterns For CSharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\PROGRAM FILES\\DOTNET\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
