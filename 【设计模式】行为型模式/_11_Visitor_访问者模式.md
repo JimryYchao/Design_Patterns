@@ -67,21 +67,29 @@
 2. 访问者集中相关的操作而分离无关的操作：相关的行为不是分布在定义该对象结构的类上而是集中在一个访问者中
 3. 增加新的 ConcreteElement 类很困难：每增加一个 ConcreteElement 要在 Visitor 中添加一个新的抽象操作，且在每个 Concrete 中实现相应的操作
 4. 通过类层次进行访问：一个迭代器可以通过调用节点对象的特定操作遍历整个对象结构，同时访问这些对象
-5. 累积状态：当访问者访问对象结构中的每一个元素时
+5. 累积状态：当访问者访问对象结构中的每一个元素时，可能会累积状态
+6. 破坏封装：访问者方法常常需要被访问元素提供访问内部状态的公共操作，可能会破坏封装
 
 ---
 # 7. 实现
 
-
+1. 每一个对象结构都有一个相关的 Visitor 类。这个抽象的访问者类为定义对象结构的每一个 ConcreteElement 类声明一个 VisitConcreteElement 操作
+2. 每个 ConcreteElement 类实现一个 Accept 操作
+3. 应用 Visitor 时产生的两个实现问题：
+   - 双分派（Double-dispatch）：访问者模式允许你不改变类即可有效地增加其上的操作
+   - 谁负责遍历对象结构：一个访问者必须访问这个对象结构的每一个元素
 
 ---
 # 8. 设计要点
 
+- Visitor 模式通过所谓双重分发 (double-dispatch) 来实现在不更改 Element 类层次结构的前提下，在运行时透明地为类层次结构上的各个类动态添加新的操作
+- 所谓双重分发即 Visitor 模式中间包括了两个多态分发 (注意其中的多态机制)：第一个为 accept 方法的多态辨析；第二个为 visit 方法的多态辨析。
+- Visitor 模式的最大缺点在于扩展类层次结构 (增添新的 Element 子类)，会导致 Visitor 类的改变。因此 Vistor 模式适用于 “Element 类层次结构稳定，而其中的操作却经常面临频繁改动”。
 
 ---
 # 9. 案例实现
 
-
+- 创建一个定义接受操作的 ComputerPart 接口。Keyboard、Mouse、Monitor 和 Computer 是实现了 ComputerPart 接口的实体类。我们将定义另一个接口 ComputerPartVisitor，它定义了访问者类的操作。Computer 使用实体访问者来执行相应的动作。
 
 > 案例示意
 
@@ -89,12 +97,13 @@
 
 > 代码实现
 
-1. [C# 实现]()
+1. [C# 实现](/【设计模式】程序参考/DesignPatterns%20For%20CSharp/Behavioral%20Patterns/Visitor/Visitor.cs)
 2. ...
 
 ---
 # 10. 相关模式
 
-
+- Composite：访问者可以用于对一个由 Composite 模式定义的对象结构进行操作。
+- Interpreter：访问者可以用于解释。
 
 ---
