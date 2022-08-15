@@ -15,17 +15,17 @@
             if (Accounts.ContainsKey(account))
                 if (Accounts[account] == password)
                 {
-                    Attach(LoginSuccessful.Instance);
+                    Attach(LoginSuccessful.Observer);
                     return;
                 }
-            Attach(LoginFailed.Instance);
+            Attach(LoginFailed.Observer);
         }
         public void RegisterAccount(string account, string password)
         {
             if (!Accounts.ContainsKey(account))
             {
                 Accounts.Add(account, password);
-                Attach(RegisterSuccessful.Instance);
+                Attach(RegisterSuccessful.Observer);
             }
             else Attach(RegisterFailed.Instance);
         }

@@ -1,17 +1,16 @@
 ﻿namespace DesignPatterns_For_CSharp.Structural_Patterns.Bridge
 {
-    public class ShapeCollection : Shape
+    public class ShapeAdvance : Shape
     {
-        private string[] colors;
-        public ShapeCollection(DrawAPI drawAPI, string[] colors) : base(drawAPI)
+        Action OnDrawCompletedEvent;
+        public ShapeAdvance(DrawAPI drawAPI, Action OnDrawCompletedEvent) : base(drawAPI)
         {
-            this.colors = colors;
+            this.OnDrawCompletedEvent = OnDrawCompletedEvent;
         }
-        public override void Draw(string color = "")
+        public override void Draw(string color)
         {
-            // 绘制多个 Shape
-            for (int i = 0; i < colors.Length; i++)
-                base.Draw(colors[i]);
+            base.Draw(color);
+            OnDrawCompletedEvent.Invoke();
         }
     }
 }

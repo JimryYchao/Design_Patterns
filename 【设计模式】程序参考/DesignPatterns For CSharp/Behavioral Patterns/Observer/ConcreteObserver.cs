@@ -2,7 +2,7 @@
 {
     public class LoginObserver : IObserver
     {
-        public readonly static LoginObserver Instance = new LoginObserver();
+        public readonly static LoginObserver Observer = new LoginObserver();
         void IObserver.Update(ISubject subject)
         {
             if (subject is Subject loginAccount)
@@ -11,7 +11,7 @@
     }
     public class RegisterObserver : IObserver
     {
-        public readonly static RegisterObserver Instance = new RegisterObserver();
+        public readonly static RegisterObserver Observer = new RegisterObserver();
         void IObserver.Update(ISubject subject)
         {
             if (subject is Subject register)
@@ -20,7 +20,7 @@
     }
     public class LoginSuccessful : IObserver
     {
-        public readonly static LoginSuccessful Instance = new LoginSuccessful();
+        public readonly static LoginSuccessful Observer = new LoginSuccessful();
         void IObserver.Update(ISubject subject)
         {
             Console.WriteLine("Login Successful");
@@ -28,7 +28,7 @@
     }
     public class LoginFailed : IObserver
     {
-        public readonly static LoginFailed Instance = new LoginFailed();
+        public readonly static LoginFailed Observer = new LoginFailed();
         void IObserver.Update(ISubject subject)
         {
             Console.WriteLine("Login Failed");
@@ -36,7 +36,7 @@
     }
     public class RegisterSuccessful : IObserver
     {
-        public readonly static RegisterSuccessful Instance = new RegisterSuccessful();
+        public readonly static RegisterSuccessful Observer = new RegisterSuccessful();
         void IObserver.Update(ISubject subject)
         {
             Console.WriteLine("Register-Account Successful");

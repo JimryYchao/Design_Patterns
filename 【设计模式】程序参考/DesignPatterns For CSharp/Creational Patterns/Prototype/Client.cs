@@ -21,15 +21,23 @@ namespace DesignPatterns_For_CSharp.Creational_Patterns.Prototype
         {
             return shapeMap.Remove(key);
         }
-        public  Shape getShape(string Key)
+        public Shape GetShapeByWiseClone(string Key)
         {
             if (!shapeMap.TryGetValue(Key, out Prototype proto))
             {
                 Console.WriteLine($"Clone {Key} failed");
                 return null;
             }
-            // 自行选择浅拷贝或深拷贝
-            return proto?.WiseClone();
+            return proto.WiseClone();
+        }
+        public Shape GetShapeByDeepClone(string Key)
+        {
+            if (!shapeMap.TryGetValue(Key, out Prototype proto))
+            {
+                Console.WriteLine($"Clone {Key} failed");
+                return null;
+            }
+            return proto.DeepClone();
         }
         // 一般从配置表读取
         private void loadCache()

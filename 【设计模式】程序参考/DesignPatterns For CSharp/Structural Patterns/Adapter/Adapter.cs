@@ -14,15 +14,19 @@
 
 namespace DesignPatterns_For_CSharp.Structural_Patterns.Adapter
 {
-    public class PlayerAdapter : Player
+    public class PlayerAdapter : IPlayer
     {
+        // Adaptee
         AudioPlayer audioPlayer = new AudioPlayer();
         VideoPlayer videoPlayer = new VideoPlayer();
-        public override void Play(string fileName, MediaType type)
+        // Adapter
+        Player Player = new Player();
+
+        public void Play(string fileName, MediaType type)
         {
+            Player.Play(fileName, type);
             audioPlayer.PlayMedia(fileName, type);
             videoPlayer.PlayMedia(fileName, type);
-            base.Play(fileName, type);
         }
     }
 }

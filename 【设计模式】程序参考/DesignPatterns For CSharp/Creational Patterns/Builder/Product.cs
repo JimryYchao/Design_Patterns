@@ -25,13 +25,13 @@
     {
         public abstract string name { get; }
         public abstract float price { get; }
-        public IPacking packing() => new Wrapper();
+        IPacking Item.packing() => new Wrapper();
     }
     internal abstract class ColdDrink : Item
     {
         public abstract string name { get; }
         public abstract float price { get; }
-        public IPacking packing() => new Wrapper();
+        IPacking Item.packing() => new Bottle();
     }
     // Burger
     internal class VegetableBurger : Burger
@@ -60,17 +60,27 @@
     {
         private List<Item> items = new List<Item>();
         public void AddItem(Item item) => items.Add(item);
+
+
+        public void ShowItems()
+        {
+            foreach (var item in items)
+                Console.WriteLine(item.name);
+        }
+        public void MakeItems()
+        {
+            foreach (var item in items)
+            {
+                Console.Write(item.name + " >>> ");
+                item.packing().Pack();
+            }
+        }
         public float GetCost()
         {
             float sum = 0;
             foreach (var item in items)
                 sum += item.price;
             return sum;
-        }
-        public void ShowItems()
-        {
-            foreach(var item in items)
-                Console.WriteLine(item.name);
         }
     }
 }

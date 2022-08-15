@@ -25,7 +25,7 @@ namespace DesignPatterns_For_CSharp.Behavioral_Patterns.State
         public virtual void SendMessage(TCPConnection connection, byte[] buffer) { }
         protected virtual void ChangeState(TCPConnection connection, TCPState state)
         {
-            Console.WriteLine($"Switch state to >>{state}");
+            Console.WriteLine($"Switch state to >> {state}");
             connection.ChangeState(state);
         }
     }

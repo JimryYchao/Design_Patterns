@@ -18,7 +18,7 @@
         {
             Console.WriteLine("Create a Image");
             if (Image == "")
-                Image = FileName.Substring(8);
+                Image = FileName.Substring(7);
         }
     }
 }

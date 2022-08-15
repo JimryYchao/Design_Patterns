@@ -17,18 +17,18 @@ namespace DesignPatterns_For_CSharp.Creational_Patterns.Abstract_Factory
 
         class RedCircleFactory : AbstractFactory
         {
-            public override IColor getColor() => ColorFactory.Instance.getColorRed();
-            public override IShape getShape() => ShapeFactory.Instance.getShapeCircle();
+            IColor AbstractFactory.getColor() => ColorFactory.Instance.getColorRed();
+            IShape AbstractFactory.getShape() => ShapeFactory.Instance.getShapeCircle();
         }
         class GreenSquareFactory : AbstractFactory
         {
-            public override IColor getColor() => ColorFactory.Instance.getColorGreen();
-            public override IShape getShape() => ShapeFactory.Instance.getShapeSquare();
+            IColor AbstractFactory.getColor() => ColorFactory.Instance.getColorGreen();
+            IShape AbstractFactory.getShape() => ShapeFactory.Instance.getShapeSquare();
         }
         class BlueRectangleFactory : AbstractFactory
         {
-            public override IColor getColor()=> ColorFactory.Instance.getColorBlue();
-            public override IShape getShape()=> ShapeFactory.Instance.getShapeRectangle();
+            IColor AbstractFactory.getColor() => ColorFactory.Instance.getColorBlue();
+            IShape AbstractFactory.getShape() => ShapeFactory.Instance.getShapeRectangle();
         }
     }
 }

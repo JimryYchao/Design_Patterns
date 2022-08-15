@@ -7,10 +7,10 @@
             User Tom = new User("Tom");
             User Lily = new User("Lily");
 
-            Tom.SendMessage(PrivateChatRoom.Instance, "Hi! Lily!");
-            Lily.SendMessage(PrivateChatRoom.Instance, "Hello! Tom!");
+            Tom.SendMessage(PrivateChatRoom.Instance, Lily, "Hi! Lily!");
+            Lily.SendMessage(PrivateChatRoom.Instance, Tom, "Hello! Tom!");
 
-            Tom.SendMessage(PublicChatRoom.Instance, "Chat in Public Room.");
+            Tom.SendMessage(PublicChatRoom.Instance, null, "Chat in Public Room.");
         }
     }
 }

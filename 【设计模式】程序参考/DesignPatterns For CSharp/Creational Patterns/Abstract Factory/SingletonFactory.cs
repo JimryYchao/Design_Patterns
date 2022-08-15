@@ -10,15 +10,15 @@
 
         class Red : IColor
         {
-            public void fill() => Console.WriteLine("Fill Red");
+            void IColor.fill() => Console.WriteLine("Fill Red");
         }
         class Green : IColor
         {
-            public void fill() => Console.WriteLine("Fill Green");
+            void IColor.fill() => Console.WriteLine("Fill Green");
         }
         class Blue : IColor
         {
-            public void fill() => Console.WriteLine("Fill Blue");
+            void IColor.fill() => Console.WriteLine("Fill Blue");
         }
     }
     internal class ShapeFactory
@@ -31,15 +31,15 @@
 
         class Circle : IShape
         {
-            public void draw() => Console.WriteLine("Draw a Circle");
+            void IShape.draw() => Console.WriteLine("Draw a Circle");
         }
         class Square : IShape
         {
-            public void draw() => Console.WriteLine("Draw a Square");
+            void IShape.draw() => Console.WriteLine("Draw a Square");
         }
         class Rectangle : IShape
         {
-            public void draw() => Console.WriteLine("Draw a Rectangle");
+            void IShape.draw() => Console.WriteLine("Draw a Rectangle");
         }
     }
 }

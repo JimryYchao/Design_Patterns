@@ -22,12 +22,12 @@ namespace DesignPatterns_For_CSharp.Structural_Patterns.Decorator
         public Decorator(IShapeComponent shape) { ShapeComponent = shape; }
         public virtual void Draw()
         {
-            ShapeComponent.Draw();
+            ShapeComponent?.Draw();
         }
 
         public virtual void Fill(string color)
         {
-            ShapeComponent.Fill(color);
+            ShapeComponent?.Fill(color);
         }
     }
 }

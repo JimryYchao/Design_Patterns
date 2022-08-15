@@ -7,7 +7,7 @@
 // #define Adapter
 // #define Bridge
 // #define Composite
-// #define Decoretor
+// #define Decorator
 // #define Facade
 // #define Flyweight
 // #define Proxy
@@ -22,7 +22,7 @@
 // #define State
 // #define Strategy
 // #define TemplateMethod
-#define Visitor
+ #define Visitor
 
 using DesignPatterns_For_CSharp.Creational_Patterns.Abstract_Factory;
 using DesignPatterns_For_CSharp.Creational_Patterns.Builder;
@@ -92,7 +92,7 @@ BridgePatternDemo.Enter();
 CompositePatternDemo.Enter();
 #endif
 
-#if Decoretor
+#if Decorator
 DecoratorPatternDemo.Enter();
 #endif
 

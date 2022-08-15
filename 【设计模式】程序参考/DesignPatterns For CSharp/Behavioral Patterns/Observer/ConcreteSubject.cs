@@ -9,13 +9,13 @@
         {
             this.name = name;
             this.password = password;
-            Attach(RegisterObserver.Instance);
+            Attach(RegisterObserver.Observer);
         }
         public void LoginAccount(string name, string password)
         {
             this.name = name;
             this.password = password;
-            Attach(LoginObserver.Instance);
+            Attach(LoginObserver.Observer);
         }
         public string GetState(int state)
         {

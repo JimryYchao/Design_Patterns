@@ -21,6 +21,6 @@ namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Visitor
         void Visit(Computer computer);
         void Visit(Mouse mouse);
         void Visit(Keyboard keyboard);
-        void Visit(Visitor.Monitor monitor);
+        void Visit(Monitor monitor);
     }
 }

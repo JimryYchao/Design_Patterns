@@ -11,9 +11,9 @@
         {
             this.name = name;
         }
-        public void SendMessage(IMediator room, string message)
+        public void SendMessage(IMediator room, User desUser, string message)
         {
-            room.ShowMessage(this, message);
+            room.ShowMessage(this,desUser, message);
         }
     }
 }

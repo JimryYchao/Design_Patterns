@@ -10,7 +10,7 @@ namespace DesignPatterns_For_CSharp.Behavioral_Patterns.State
         public override void SendMessage(TCPConnection connection, byte[] buffer)
         {
             if (connection.IsConnected)
-                connection.Connector?.Send(buffer);
+                connection.Connector.Send(buffer);
             else
                 ChangeState(connection, TCPUnconnected.Instance);
             ChangeState(connection, TCPListen.Instance);

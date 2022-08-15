@@ -18,6 +18,6 @@ namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Mediator
 {
     public interface IMediator
     {
-        void ShowMessage(User user, string message);
+        void ShowMessage(User oriUser, User desUser, string message);
     }
 }

@@ -1,5 +1,6 @@
 ﻿namespace DesignPatterns_For_CSharp.Structural_Patterns.Bridge
 {
+    // 桥接对象
     public class Shape
     {
         protected DrawAPI drawAPI;

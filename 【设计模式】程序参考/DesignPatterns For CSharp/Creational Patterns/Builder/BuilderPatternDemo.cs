@@ -4,9 +4,14 @@
     {
         public static void Enter()
         {
-            Meal? mMeal = new Director(VegMealBuilder.builder).Construct();
-            mMeal?.ShowItems();
-            Console.WriteLine(mMeal?.GetCost());
+            Director vegMealBuilder = new Director(VegMealBuilder.builder);
+            Meal mMeal = vegMealBuilder.Construct();
+            Console.WriteLine("---- LIST ----");
+            mMeal.ShowItems();
+            Console.WriteLine("---- PACKING ----");
+            mMeal.MakeItems();
+            Console.WriteLine("---- COST ----");
+            Console.WriteLine(mMeal.GetCost());
         }
     }
 }

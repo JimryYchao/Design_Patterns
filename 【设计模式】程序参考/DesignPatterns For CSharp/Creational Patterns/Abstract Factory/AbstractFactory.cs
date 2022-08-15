@@ -15,9 +15,9 @@
 
 namespace DesignPatterns_For_CSharp.Creational_Patterns.Abstract_Factory
 {
-    public abstract class AbstractFactory
+    public interface AbstractFactory
     {
-        public abstract IShape getShape();
-        public abstract IColor getColor();
+        public IShape getShape();
+        public IColor getColor();
     }
 }

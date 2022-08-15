@@ -6,7 +6,7 @@ namespace DesignPatterns_For_CSharp.Behavioral_Patterns.State
     public class TCPConnection
     {
         private TCPState _tcpState;
-        public Socket? Connector;
+        public Socket Connector;
         public IPAddress IPAddress = IPAddress.Parse("127.0.0.1");
         public int Port = 7777;
         public bool IsConnected

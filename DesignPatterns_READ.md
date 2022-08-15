@@ -1,7 +1,7 @@
 # [Design Patterns](./【设计模式】_设计模式与七大原则/_01_GoF_设计模式简述.md)
 
 ---
-# 1. [七大原则](./【设计模式】_设计模式与七大原则/_02_GoF_Principles.md)(Principles of Design Patterns)
+## 1. [七大原则](./【设计模式】_设计模式与七大原则/_02_GoF_Principles.md)(Principles of Design Patterns)
 
 - 开闭原则（Open Closed Principle，OCP）
 - 里氏替换原则（Liskov Substitution Principle，LSP）
@@ -12,7 +12,7 @@
 - 合成复用原则（Composite Reuse Principle，CRP）又叫组合/聚合复用原则（Composition/Aggregate Reuse Principle，CARP）
 
 ---
-# 2. 创建型模式(Creational Patterns)
+## 2. 创建型模式(Creational Patterns)
 
 - [抽象工厂模式](./【设计模式】创建型模式/_01_AbstractFactory_抽象工厂模式.md) (Abstract Factory Pattern)
 - [建造者模式](./【设计模式】创建型模式/_02_Builder_建造者模式.md) (Builder Pattern)
@@ -21,7 +21,7 @@
 - [单例模式](./【设计模式】创建型模式/_05_Singleton_单例模式.md) (Singleton Pattern)
 
 ---
-# 3. 结构型模式(Structural Patterns)
+## 3. 结构型模式(Structural Patterns)
 
 - [适配器模式](./【设计模式】结构型模式/_01_Adapter_适配器模式.md) (Adapter Pattern)
 - [桥接模式](./【设计模式】结构型模式/_02_Bridge_桥接模式.md) (Bridge Pattern)
@@ -32,7 +32,7 @@
 - [代理模式](./【设计模式】结构型模式/_07_Proxy_代理模式.md) (Proxy Pattern)
 
 ---
-# 4. 行为型模式(Behavioural Patterns)
+## 4. 行为型模式(Behavioural Patterns)
 
 - [责任链模式](./【设计模式】行为型模式/_01_ChainOfResponsibility_责任链模式.md)（Chain of Responsibility Pattern）
 - [命令模式](./【设计模式】行为型模式/_02_Command_命令模式.md)（Command Pattern）
@@ -52,7 +52,7 @@
 - [空对象模式]()（Null Object Pattern）
 
 ---
-# 5. J2EE 模式
+## 5. J2EE 模式
 
 - MVC 模式（MVC Pattern）
 - 业务代表模式（Business Delegate Pattern）

@@ -7,8 +7,8 @@
             Shape RedCircle = new Shape(new Circle());
             RedCircle.Draw("Red");
 
-            ShapeCollection Squares = new ShapeCollection(new Square(), new string[] { "Red", "Blue", "Black", "Yellow" });
-            Squares.Draw();
+            Shape Square = new ShapeAdvance(new Square(), () => { Console.WriteLine("Drew Completly"); });
+            Square.Draw("Blue");
         }
     }
 }

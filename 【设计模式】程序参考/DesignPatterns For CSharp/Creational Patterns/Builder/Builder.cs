@@ -15,9 +15,10 @@
 
 namespace DesignPatterns_For_CSharp.Creational_Patterns.Builder
 {
-    public abstract class Builder
+    // 为复杂对象的各个组件提供 builder 接口 
+    public interface Builder
     {
-        public abstract Meal buildVegMeal();
-        public abstract Meal buildChickenMeal();
+        Item BuildColdDrink();
+        Item BuildBurger();
     }
 }

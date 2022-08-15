@@ -1,7 +1,7 @@
 ﻿namespace DesignPatterns_For_CSharp.Creational_Patterns.Prototype
 {
     [Serializable]
-    public abstract class Shape : ICloneable
+    public class Shape : ICloneable
     {
         private string id = string.Empty;
         private string type = string.Empty;
@@ -12,8 +12,8 @@
             this.id = id;
             this.type = type;
         }
-        public abstract void Draw();
-        public abstract void Fill(string color);
+        public virtual void Draw() { }
+        public virtual void Fill(string color) { }
         public object Clone() => MemberwiseClone();
     }
     public class Circle : Shape

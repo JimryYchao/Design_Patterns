@@ -11,6 +11,8 @@
             Console.WriteLine(Calculator.Calculate("2+(1+2*5)"));
 
             Console.WriteLine(Calculator.Calculate("2*(1+2*6)"));
+
+            Console.WriteLine(Calculator.Calculate("(68*(115+20)+10)"));
         }
     }
 }
