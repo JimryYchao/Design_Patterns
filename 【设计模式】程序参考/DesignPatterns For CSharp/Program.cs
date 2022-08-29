@@ -22,7 +22,9 @@
 // #define State
 // #define Strategy
 // #define TemplateMethod
- #define Visitor
+// #define Visitor
+
+#define Null_Object
 
 using DesignPatterns_For_CSharp.Creational_Patterns.Abstract_Factory;
 using DesignPatterns_For_CSharp.Creational_Patterns.Builder;
@@ -49,6 +51,10 @@ using DesignPatterns_For_CSharp.Behavioral_Patterns.State;
 using DesignPatterns_For_CSharp.Behavioral_Patterns.Strategy;
 using DesignPatterns_For_CSharp.Behavioral_Patterns.Template_Method;
 using DesignPatterns_For_CSharp.Behavioral_Patterns.Visitor;
+
+//-------------------------------------------------------------- 
+
+using DesignPatterns_For_CSharp.Extend_Patterns;
 
 Console.WriteLine("Hello, World!");
 
@@ -158,3 +164,13 @@ VisitorPatternDemo.Enter();
 #endif
 
 #endregion Behavioral Patterns
+
+
+#region Extend Patterns
+
+#if Null_Object
+NullObjectPattern.Enter();
+#endif
+
+
+#endregion Extend Patterns

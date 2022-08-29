@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\JCWork\\_Learn_\\【DP】设计模式\\设计模式\\【设计模式】程序参考\\DesignPatterns For CSharp\\DesignPatterns For CSharp.csproj": {}
+    "D:\\JCWork\\_Learn_\\【DP】设计模式\\_DP_设计模式\\【设计模式】程序参考\\DesignPatterns For CSharp\\DesignPatterns For CSharp.csproj": {}
   },
   "projects": {
-    "D:\\JCWork\\_Learn_\\【DP】设计模式\\设计模式\\【设计模式】程序参考\\DesignPatterns For CSharp\\DesignPatterns For CSharp.csproj": {
+    "D:\\JCWork\\_Learn_\\【DP】设计模式\\_DP_设计模式\\【设计模式】程序参考\\DesignPatterns For CSharp\\DesignPatterns For CSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\JCWork\\_Learn_\\【DP】设计模式\\设计模式\\【设计模式】程序参考\\DesignPatterns For CSharp\\DesignPatterns For CSharp.csproj",
+        "projectUniqueName": "D:\\JCWork\\_Learn_\\【DP】设计模式\\_DP_设计模式\\【设计模式】程序参考\\DesignPatterns For CSharp\\DesignPatterns For CSharp.csproj",
         "projectName": "DesignPatterns For CSharp",
-        "projectPath": "D:\\JCWork\\_Learn_\\【DP】设计模式\\设计模式\\【设计模式】程序参考\\DesignPatterns For CSharp\\DesignPatterns For CSharp.csproj",
+        "projectPath": "D:\\JCWork\\_Learn_\\【DP】设计模式\\_DP_设计模式\\【设计模式】程序参考\\DesignPatterns For CSharp\\DesignPatterns For CSharp.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\JCWork\\_Learn_\\【DP】设计模式\\设计模式\\【设计模式】程序参考\\DesignPatterns For CSharp\\obj\\",
+        "outputPath": "D:\\JCWork\\_Learn_\\【DP】设计模式\\_DP_设计模式\\【设计模式】程序参考\\DesignPatterns For CSharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
