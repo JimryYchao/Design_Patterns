@@ -8,13 +8,13 @@
 - 依赖倒置原则（Dependence Inversion Principle，DIP）
 - 单一职责原则（Single Responsibility Principle，SRP）
 - 接口隔离原则（Interface Segregation Principle，ISP）
-- 迪米特法则（Law of Demeter，LoD）又叫最少知识原则（Least Knowledge Principle，LKP)
+- 迪米特法则（Law of Demeter，LOD）又叫最少知识原则（Least Knowledge Principle，LKP)
 - 合成复用原则（Composite Reuse Principle，CRP）又叫组合/聚合复用原则（Composition/Aggregate Reuse Principle，CARP）
 
 ---
 ## 2. 创建型模式(Creational Patterns)
 
-- [抽象工厂模式](./【设计模式】创建型模式/_01_AbstractFactory_抽象工厂模式.md) (Abstract Factory Pattern)
+- [抽象工厂模式](./_DP_02_GOF%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/_DP_02_%E5%88%9B%E5%BB%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/) (Abstract Factory Pattern)
 - [建造者模式](./【设计模式】创建型模式/_02_Builder_建造者模式.md) (Builder Pattern)
 - [工厂模式](./【设计模式】创建型模式/_03_Factory_工厂模式.md) (Factory Pattern)
 - [原型模式](./【设计模式】创建型模式/_04_Prototype_原型模式.md) (Prototype Pattern)
@@ -49,7 +49,7 @@
 ---
 
 - [过滤器模式](./【设计模式】结构型模式/_08_Filter_过滤器模式.md) (Filter,Criteria Pattern)
-- [空对象模式]()（Null Object Pattern）
+- [空对象模式](./%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E6%8B%93%E5%B1%95%E6%A8%A1%E5%BC%8F/_Null%20Object_%E7%A9%BA%E5%AF%B9%E8%B1%A1%E6%A8%A1%E5%BC%8F.md)
 
 ---
 ## 5. J2EE 模式
