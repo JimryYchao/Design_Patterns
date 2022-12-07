@@ -13,7 +13,8 @@
 	- [8. 设计要点](#8-设计要点)
 	- [9. 单例的常规实现](#9-单例的常规实现)
 		- [9.1 单线程安全(非多线程安全特性)](#91-单线程安全非多线程安全特性)
-		- [9.2 多线程安全](#92-多线程安全)
+		- [9.2 单例继承模式](#92-单例继承模式)
+		- [9.3 多线程安全](#93-多线程安全)
 	- [10. 案例](#10-案例)
 
 ---
@@ -93,14 +94,14 @@
 
 ```csharp
     public class Singleton{
-        private static Singleton instance;   
+        private static Singleton instance;
         private Singleton(){}
         public static Singleton getInstance(){
             if(instance == null)
                 instance = new Singleton();
             return instance;
         }
-    } 
+    }
 ```
 
 > CSharp 属性调用单例
@@ -141,7 +142,36 @@
 ```
 
 ---
-### 9.2 多线程安全
+### 9.2 单例继承模式
+
+> 反射法
+
+```csharp
+ public class InheritSingleton<T> where T : InheritSingleton<T>
+{
+    private InheritSingleton() { }
+    private static readonly Lazy<T> instance = new Lazy<T>(() =>
+    {
+        var ctors = typeof(T).GetConstructors(
+          BindingFlags.Instance
+          | BindingFlags.NonPublic
+          | BindingFlags.Public);
+        if (ctors.Count() != 1)
+            throw new InvalidOperationException(String.Format("Type {0} must have exactly one constructor.", typeof(T)));
+        // 子类可以设置为仅拥有私有或受保护的构造函数
+        var ctor = ctors.SingleOrDefault(c => !c.GetParameters().Any() &&
+        /* 按需求选择搭配 */
+        (c.IsPrivate /* 是否私有 */ || c.IsFamily /* 是否派生 */ || c.IsAssembly /* 是否程序集可见 */ ));
+        if (ctor == null)
+            throw new InvalidOperationException(String.Format("The constructor for {0} must be private or protected and take no parameters.", typeof(T)));
+        return (T)ctor.Invoke(null);
+    }, true);
+    public static T Instance => instance.Value;
+}
+```
+
+---
+### 9.3 多线程安全
 
 > 内联初始化 (静态构造)
 
@@ -174,7 +204,7 @@
 
 ```csharp
     public class Singleton{
-        private static readonly Lazy<Singleton> instance = 
+        private static readonly Lazy<Singleton> instance =
             new Lazy<Singleton>(()=>new Singleton());
         public static Singleton Instance => instance.Value;
     }

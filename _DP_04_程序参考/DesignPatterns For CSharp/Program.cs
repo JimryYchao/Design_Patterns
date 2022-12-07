@@ -24,7 +24,7 @@
 // #define TemplateMethod
 // #define Visitor
 
-#define Null_Object
+// #define Null_Object
 
 using DesignPatterns_For_CSharp.Creational_Patterns.Abstract_Factory;
 using DesignPatterns_For_CSharp.Creational_Patterns.Builder;
@@ -57,7 +57,6 @@ using DesignPatterns_For_CSharp.Behavioral_Patterns.Visitor;
 using DesignPatterns_For_CSharp.Extend_Patterns;
 
 Console.WriteLine("Hello, World!");
-
 
 #region Creational Patterns
 
