@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns_For_CSharp.Creational_Patterns.Builder
+﻿using System;
+
+namespace DesignPatterns_For_CSharp.Creational_Patterns.Builder
 {
     public class BuilderPatternDemo
     {

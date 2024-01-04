@@ -1,4 +1,7 @@
-﻿namespace DesignPatterns_For_CSharp.Creational_Patterns.Builder
+﻿using System;
+using System.Collections.Generic;
+
+namespace DesignPatterns_For_CSharp.Creational_Patterns.Builder
 {
     // 模拟复杂的内部
     // IPacking

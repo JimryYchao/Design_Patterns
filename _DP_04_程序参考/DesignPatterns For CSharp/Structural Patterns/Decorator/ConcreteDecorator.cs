@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns_For_CSharp.Structural_Patterns.Decorator
+﻿using System;
+
+namespace DesignPatterns_For_CSharp.Structural_Patterns.Decorator
 {
     public class ShapeDecorator : Decorator
     {

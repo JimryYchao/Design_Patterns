@@ -1,4 +1,7 @@
-﻿namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Memento
+﻿using System;
+using System.Collections.Generic;
+
+namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Memento
 {
     public class Caretaker
     {
@@ -12,6 +15,8 @@
             if (MementoDic.TryGetValue(version, out Memento m))
                 return m;
             throw new ArgumentNullException("Version");
+
+
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns_For_CSharp.Structural_Patterns.Bridge
+﻿using System;
+
+namespace DesignPatterns_For_CSharp.Structural_Patterns.Bridge
 {
     public class BridgePatternDemo
     {

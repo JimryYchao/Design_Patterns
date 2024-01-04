@@ -13,6 +13,8 @@
  *         3.这应该是类设计者的责任，而不是使用者的责任。}
  */
 
+using System;
+using System.Linq;
 using System.Reflection;
 
 namespace DesignPatterns_For_CSharp.Creational_Patterns.Singleton

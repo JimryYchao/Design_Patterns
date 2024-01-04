@@ -1,4 +1,7 @@
-﻿namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Observer
+﻿using System;
+using System.Collections.Generic;
+
+namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Observer
 {
     public interface IChangeManager
     {

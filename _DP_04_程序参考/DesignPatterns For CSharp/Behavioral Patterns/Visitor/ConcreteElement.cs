@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Visitor
+﻿using System;
+
+namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Visitor
 {
     public class Keyboard : IComputerPart
     {

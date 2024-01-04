@@ -1,36 +1,38 @@
-﻿// #define Abstract_Factory
-// #define Builder
-// #define Factory_Method
-// #define Prototype
-// #define Singleton
+﻿#define Abstract_Factory
+#define Builder
+#define Factory_Method
+#define Prototype
+#define Singleton
 
-// #define Adapter
-// #define Bridge
-// #define Composite
-// #define Decorator
-// #define Facade
-// #define Flyweight
-// #define Proxy
+#define Adapter
+#define Bridge
+#define Composite
+#define Decorator
+#define Facade
+#define Flyweight
+#define Proxy
 
-// #define ChainOfResponsibility
-// #define Command
-// #define Interpreter
-// #define Iterator
-// #define Mediator
-// #define Memento
-// #define Observer
-// #define State
-// #define Strategy
-// #define TemplateMethod
-// #define Visitor
+#define ChainOfResponsibility
+#define Command
+#define Interpreter
+#define Iterator
+#define Mediator
+#define Memento
+#define Observer
+#define State
+#define Strategy
+#define TemplateMethod
+#define Visitor
 
-// #define Null_Object
+#define Null_Object
 
 using DesignPatterns_For_CSharp.Creational_Patterns.Abstract_Factory;
 using DesignPatterns_For_CSharp.Creational_Patterns.Builder;
 using DesignPatterns_For_CSharp.Creational_Patterns.Factory_Method;
 using DesignPatterns_For_CSharp.Creational_Patterns.Prototype;
 using DesignPatterns_For_CSharp.Creational_Patterns.Singleton;
+
+//-------------------------------------------------------------- 
 
 using DesignPatterns_For_CSharp.Structural_Patterns.Adapter;
 using DesignPatterns_For_CSharp.Structural_Patterns.Bridge;
@@ -39,6 +41,8 @@ using DesignPatterns_For_CSharp.Structural_Patterns.Decorator;
 using DesignPatterns_For_CSharp.Structural_Patterns.Facade;
 using DesignPatterns_For_CSharp.Structural_Patterns.Flyweight;
 using DesignPatterns_For_CSharp.Structural_Patterns.Proxy;
+
+//-------------------------------------------------------------- 
 
 using DesignPatterns_For_CSharp.Behavioral_Patterns.ChainOfResponsibility;
 using DesignPatterns_For_CSharp.Behavioral_Patterns.Command;
@@ -55,6 +59,19 @@ using DesignPatterns_For_CSharp.Behavioral_Patterns.Visitor;
 //-------------------------------------------------------------- 
 
 using DesignPatterns_For_CSharp.Extend_Patterns;
+
+//-------------------------------------------------------------- 
+
+using System;
+
+#if !NET5_0_OR_GREATER
+class Program
+{
+
+    static void Main(string[] args)
+    {
+
+#endif
 
 Console.WriteLine("Hello, World!");
 
@@ -173,3 +190,9 @@ NullObjectPattern.Enter();
 
 
 #endregion Extend Patterns
+
+
+#if !NET5_0_OR_GREATER
+    }
+}
+#endif

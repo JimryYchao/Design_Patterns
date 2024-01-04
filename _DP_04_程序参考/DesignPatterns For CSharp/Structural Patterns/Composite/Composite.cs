@@ -13,6 +13,9 @@
  *         结构，从而使得客户代码就像处理简单对象一样来处理复杂的对象容器? }
  */
 
+using System;
+using System.Collections.Generic;
+
 namespace DesignPatterns_For_CSharp.Structural_Patterns.Composite
 {
     public class Composite : IComponent

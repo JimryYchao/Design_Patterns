@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns_For_CSharp.Structural_Patterns.Proxy
+﻿using System;
+
+namespace DesignPatterns_For_CSharp.Structural_Patterns.Proxy
 {
     public class RealImage : Image
     {

@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Observer
+﻿using System;
+
+namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Observer
 {
     public class LoginObserver : IObserver
     {

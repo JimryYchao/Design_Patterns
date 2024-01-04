@@ -12,6 +12,8 @@
  *          状态转化之间引入紧耦合? }
  */
 
+using System;
+
 namespace DesignPatterns_For_CSharp.Behavioral_Patterns.State
 {
     /// <summary>

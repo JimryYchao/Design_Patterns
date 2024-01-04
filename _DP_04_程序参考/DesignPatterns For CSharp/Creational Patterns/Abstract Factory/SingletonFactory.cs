@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns_For_CSharp.Creational_Patterns.Abstract_Factory
+﻿using System;
+
+namespace DesignPatterns_For_CSharp.Creational_Patterns.Abstract_Factory
 {
     internal class ColorFactory
     {

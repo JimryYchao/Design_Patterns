@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns_For_CSharp.Creational_Patterns.Prototype
+﻿using System;
+
+namespace DesignPatterns_For_CSharp.Creational_Patterns.Prototype
 {
     [Serializable]
     public class Shape : ICloneable

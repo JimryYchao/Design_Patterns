@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Iterator
+﻿using System;
+
+namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Iterator
 {
     /// <summary>
     /// 定义迭代器遍历

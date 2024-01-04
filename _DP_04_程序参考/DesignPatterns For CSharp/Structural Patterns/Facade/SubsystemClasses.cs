@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns_For_CSharp.Structural_Patterns.Facade
+﻿using System;
+
+namespace DesignPatterns_For_CSharp.Structural_Patterns.Facade
 {
     internal class Door
     {

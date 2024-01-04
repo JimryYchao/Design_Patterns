@@ -15,6 +15,8 @@
  *         行时决定来处理请求，从而使两者解耦。 }
  */
 
+using System;
+
 namespace DesignPatterns_For_CSharp.Behavioral_Patterns.ChainOfResponsibility
 {
     public abstract class LoggerHandler

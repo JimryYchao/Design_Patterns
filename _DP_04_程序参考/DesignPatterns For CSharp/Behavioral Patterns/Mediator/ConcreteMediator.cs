@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Mediator
+﻿using System;
+
+namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Mediator
 {
     public class PrivateChatRoom : IMediator
     {

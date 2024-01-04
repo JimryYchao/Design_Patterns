@@ -11,6 +11,8 @@
  *         中常见的解决方式。 }
  */
 
+using System.Collections.Generic;
+
 namespace DesignPatterns_For_CSharp.Structural_Patterns.Proxy
 {
     public class ImageProxy : Image

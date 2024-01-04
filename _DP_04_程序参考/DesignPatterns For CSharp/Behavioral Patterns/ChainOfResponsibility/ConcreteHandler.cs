@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns_For_CSharp.Behavioral_Patterns.ChainOfResponsibility
+﻿using System;
+
+namespace DesignPatterns_For_CSharp.Behavioral_Patterns.ChainOfResponsibility
 {
     public class ConsoleLogger : LoggerHandler
     {

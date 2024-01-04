@@ -12,6 +12,8 @@
  *         以轻松地沿着“实现”和“抽象”两个方向变化，而不引入额外的复杂度? }
  */
 
+using System;
+
 namespace DesignPatterns_For_CSharp.Structural_Patterns.Bridge
 {
     public abstract class DrawAPI

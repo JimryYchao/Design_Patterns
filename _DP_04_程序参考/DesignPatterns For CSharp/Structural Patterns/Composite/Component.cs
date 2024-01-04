@@ -2,7 +2,6 @@
 {
     public interface IComponent
     {
-        protected bool isLeaf { get; set; }
         abstract public void Operation();
         abstract public int Add(IComponent component);
         abstract public bool Remove(IComponent component);

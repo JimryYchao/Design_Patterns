@@ -1,4 +1,7 @@
-﻿namespace DesignPatterns_For_CSharp.Structural_Patterns.Flyweight
+﻿using System;
+using System.Collections.Generic;
+
+namespace DesignPatterns_For_CSharp.Structural_Patterns.Flyweight
 {
     public class FlyweightFactory
     {

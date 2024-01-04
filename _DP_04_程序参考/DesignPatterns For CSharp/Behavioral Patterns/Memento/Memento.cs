@@ -14,6 +14,8 @@
  *          装性。}
  */
 
+using System.Collections.Generic;
+
 namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Memento
 {
     public class Memento

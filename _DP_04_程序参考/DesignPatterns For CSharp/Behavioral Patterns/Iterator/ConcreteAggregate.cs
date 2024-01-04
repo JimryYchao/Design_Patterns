@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Iterator
+﻿using System;
+
+namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Iterator
 {
     public partial class ConcreteAggregate<T> : IAggregate<T>, Iterable<T>
     {

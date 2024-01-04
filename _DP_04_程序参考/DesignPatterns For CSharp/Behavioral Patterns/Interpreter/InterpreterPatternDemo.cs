@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Interpreter
+﻿using System;
+
+namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Interpreter
 {
     public class InterpreterPatternDemo
     {

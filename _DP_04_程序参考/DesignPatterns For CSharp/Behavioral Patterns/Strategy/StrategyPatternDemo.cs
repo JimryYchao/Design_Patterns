@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Strategy
+﻿using System;
+
+namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Strategy
 {
     public class StrategyPatternDemo
     {

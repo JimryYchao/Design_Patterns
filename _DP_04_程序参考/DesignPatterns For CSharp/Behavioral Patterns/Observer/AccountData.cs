@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Observer
+﻿using System.Collections.Generic;
+
+namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Observer
 {
     internal class AccountData : ISubject
     {
