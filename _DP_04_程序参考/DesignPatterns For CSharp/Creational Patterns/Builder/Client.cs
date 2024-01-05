@@ -8,6 +8,7 @@ namespace DesignPatterns_For_CSharp.Creational_Patterns.Builder
         {
             Director vegMealBuilder = new Director(VegMealBuilder.builder);
             Meal mMeal = vegMealBuilder.Construct();
+            mMeal.AddItem(new ChickenBurger());
             Console.WriteLine("---- LIST ----");
             mMeal.ShowItems();
             Console.WriteLine("---- PACKING ----");

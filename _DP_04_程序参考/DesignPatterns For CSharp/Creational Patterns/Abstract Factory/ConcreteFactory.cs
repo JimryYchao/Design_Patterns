@@ -1,28 +1,37 @@
-﻿namespace DesignPatterns_For_CSharp.Creational_Patterns.Abstract_Factory
+﻿using System.Collections.Generic;
+
+namespace DesignPatterns_For_CSharp.Creational_Patterns.Abstract_Factory
 {
-    internal class FactoryProducer
+    public enum ProductKind
     {
-        internal static readonly FactoryProducer Instance = new FactoryProducer();
-        private FactoryProducer() { }
+        RedCircle,
+        GreenSquare,
+        BlueRectangle
+    }
+    public class FactoryProducer
+    {
+        static Dictionary<ProductKind, AbstractFactory> factorys = new Dictionary<ProductKind, AbstractFactory>();
 
-        internal AbstractFactory getRedCircle() => new RedCircleFactory();
-        internal AbstractFactory getGreenSquare() => new GreenSquareFactory();
-        internal AbstractFactory getBlueRectangle() => new BlueRectangleFactory();
+        public static AbstractFactory GetFactory(ProductKind kind)
+        {
+            if (factorys.ContainsKey(kind))
+                return factorys[kind];
+            else
+            {
+                factorys.Add(kind, CteateFactory(kind));
+                return GetFactory(kind);
+            }
+        }
 
-        class RedCircleFactory : AbstractFactory
+        static AbstractFactory CteateFactory(ProductKind kind)
         {
-            IColor AbstractFactory.getColor() => ColorFactory.Instance.getColorRed();
-            IShape AbstractFactory.getShape() => ShapeFactory.Instance.getShapeCircle();
-        }
-        class GreenSquareFactory : AbstractFactory
-        {
-            IColor AbstractFactory.getColor() => ColorFactory.Instance.getColorGreen();
-            IShape AbstractFactory.getShape() => ShapeFactory.Instance.getShapeSquare();
-        }
-        class BlueRectangleFactory : AbstractFactory
-        {
-            IColor AbstractFactory.getColor() => ColorFactory.Instance.getColorBlue();
-            IShape AbstractFactory.getShape() => ShapeFactory.Instance.getShapeRectangle();
+            return kind switch
+            {
+                ProductKind.RedCircle => new ProductFactory(ShapeKind.Circle, ColorKind.Red),
+                ProductKind.GreenSquare => new ProductFactory(ShapeKind.Square, ColorKind.Green),
+                ProductKind.BlueRectangle => new ProductFactory(ShapeKind.Rectangle, ColorKind.Blue),
+                _ => new ProductFactory(ShapeKind.None, ColorKind.None)
+            };
         }
     }
 }

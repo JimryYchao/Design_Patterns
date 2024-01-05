@@ -14,7 +14,7 @@ namespace DesignPatterns_For_CSharp.Structural_Patterns.Bridge
     {
         public override void Draw() => Console.WriteLine("Draw a Rectangle");
     }
-    public class BigCircle: Circle
+    public class BigCircle : Circle
     {
         public override void Draw() => Console.WriteLine("Draw a Big Circle");
     }

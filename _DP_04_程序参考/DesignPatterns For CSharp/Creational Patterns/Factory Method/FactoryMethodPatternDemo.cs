@@ -4,15 +4,15 @@
     {
         public static void Enter()
         {
-            IShape circle = new Creator().getShape();
+            IShape circle = ShapeFactory.GetShape(ShapeKind.Circle);
             circle.Draw();
             circle.Fill();
 
-            IShape BigCircle = new BigCircleCreator().getShape();
+            IShape BigCircle = ShapeFactory.GetShape(ShapeKind.BigCircle);
             BigCircle.Draw();
             BigCircle.Fill();
 
-            IShape Square = new SquareCreator().getShape();
+            IShape Square = ShapeFactory.GetShape(ShapeKind.Square);
             Square.Draw();
             Square.Fill();
         }

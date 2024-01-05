@@ -61,16 +61,7 @@ namespace DesignPatterns_For_CSharp.Creational_Patterns.Prototype
         public SquarePrototype() : base(new Square("1002", "Square")) { }
         public override Shape WiseClone()
         {
-            try
-            {
-                Square? cir = defaultShape.Clone() as Square;
-                return cir;
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-            return null;
+            return defaultShape.Clone() as Square;
         }
     }
     static class DeepWiseExpansion
@@ -78,7 +69,7 @@ namespace DesignPatterns_For_CSharp.Creational_Patterns.Prototype
         /// <summary>
         /// 使用二进制流进行 对象深拷贝, 要求对象必须具有 [Serializable] 属性
         /// </summary>
-        [Obsolete("在 5.0 后续版本中逐渐 obsolute")]
+        [Obsolete("在 5.0 后续版本中被弃用")]
         public static T CloneObject<T>(this T source) where T : Shape
         {
             if (!typeof(T).IsSerializable)

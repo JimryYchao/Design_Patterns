@@ -13,7 +13,7 @@
         }
         public void SendMessage(IMediator room, User desUser, string message)
         {
-            room.ShowMessage(this,desUser, message);
+            room.ShowMessage(this, desUser, message);
         }
     }
 }

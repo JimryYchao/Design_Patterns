@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPatterns_For_CSharp.Structural_Patterns.Composite
+﻿namespace DesignPatterns_For_CSharp.Structural_Patterns.Composite
 {
     public class Client
     {
@@ -21,7 +15,7 @@ namespace DesignPatterns_For_CSharp.Structural_Patterns.Composite
             Employee baseA = new Employee(true);
             baseA.SetMessage("Lee", "woman", 21, 8000);
             Employee baseB = new Employee(true);
-            baseB.SetMessage("Ychao", "man", 21, 7500);  
+            baseB.SetMessage("Ychao", "man", 21, 7500);
             Employee baseC = new Employee(true);
             baseC.SetMessage("Tomas", "man", 22, 7000);
             Employee baseD = new Employee(true);

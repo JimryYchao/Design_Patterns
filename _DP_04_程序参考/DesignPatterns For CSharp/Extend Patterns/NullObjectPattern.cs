@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignPatterns_For_CSharp.Extend_Patterns
 {
@@ -37,7 +33,7 @@ namespace DesignPatterns_For_CSharp.Extend_Patterns
         internal class MessageHandler : Message
         {
             public MessageHandler(string message) : base(message) { }
-            public override void Handle()=>
+            public override void Handle() =>
                 Console.WriteLine("Handle Message >>> " + message);
         }
         internal class NullObjectClass : Message

@@ -3,17 +3,10 @@
 namespace DesignPatterns_For_CSharp.Creational_Patterns.Prototype
 {
     [Serializable]
-    public class Shape : ICloneable
+    public class Shape(string id, string type) : ICloneable
     {
-        private string id = string.Empty;
-        private string type = string.Empty;
         public string ID => id;
         public string Type => type;
-        public Shape(string id, string type)
-        {
-            this.id = id;
-            this.type = type;
-        }
         public virtual void Draw() { }
         public virtual void Fill(string color) { }
         public object Clone() => MemberwiseClone();

@@ -47,7 +47,7 @@ namespace DesignPatterns_For_CSharp.Behavioral_Patterns.Interpreter
                 int tag = findSplit(expression, start, end);
                 if (tag < 0)
                 {
-                    string[] s = expression.Substring(start, end - start + 1).Split(new char[] { '(',')'}, StringSplitOptions.RemoveEmptyEntries);
+                    string[] s = expression.Substring(start, end - start + 1).Split(new char[] { '(', ')' }, StringSplitOptions.RemoveEmptyEntries);
                     ptree = new NumberExpression(double.Parse(s[0]));
                 }
                 else

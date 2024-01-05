@@ -1,26 +1,36 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignPatterns_For_CSharp.Creational_Patterns.Factory_Method
 {
-    public class SquareCreator : ICreator
+    public partial class ShapeFactory
     {
-        public IShape getShape() => new Square();
-    }
-    public class RectangleCreator : ICreator
-    {
-        public IShape getShape() => new Rectangle();
-    }
-    public class BigCircleCreator : Creator
-    {
-        private void SetRadius() => Console.WriteLine("Set Radius to 10");
-        public override IShape getShape()
+        internal class CircleCreator : ICreator
         {
-            SetRadius();
-            return base.getShape();
+            readonly static CircleCreator s_Instance = new CircleCreator();
+            public static ICreator Instance => s_Instance;
+            public virtual IShape getShape() => new Circle();
+        }
+        internal class SquareCreator : ICreator
+        {
+            readonly static SquareCreator s_Instance = new SquareCreator();
+            public static ICreator Instance => s_Instance;
+            public virtual IShape getShape() => new Square();
+        }
+        internal class RectangleCreator : ICreator
+        {
+            readonly static RectangleCreator s_Instance = new RectangleCreator();
+            public static ICreator Instance => s_Instance;
+            public virtual IShape getShape() => new Rectangle();
+        }
+        internal class BigCircleCreator : CircleCreator
+        {
+            public static new readonly BigCircleCreator Instance = new BigCircleCreator();
+            private void SetRadius() => Console.WriteLine("Set Radius to 10");
+            public override IShape getShape()
+            {
+                SetRadius();
+                return base.getShape();
+            }
         }
     }
 }

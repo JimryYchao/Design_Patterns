@@ -5,10 +5,7 @@ namespace DesignPatterns_For_CSharp.Creational_Patterns.Builder
 {
     // 模拟复杂的内部
     // IPacking
-    public interface IPacking
-    {
-        void Pack();
-    }
+    public interface IPacking { void Pack(); }
     internal class Bottle : IPacking
     {
         public void Pack() => Console.WriteLine("Do Bottle");
@@ -63,8 +60,6 @@ namespace DesignPatterns_For_CSharp.Creational_Patterns.Builder
     {
         private List<Item> items = new List<Item>();
         public void AddItem(Item item) => items.Add(item);
-
-
         public void ShowItems()
         {
             foreach (var item in items)

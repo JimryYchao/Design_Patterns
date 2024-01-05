@@ -26,22 +26,6 @@
 
 #define Null_Object
 
-using DesignPatterns_For_CSharp.Creational_Patterns.Abstract_Factory;
-using DesignPatterns_For_CSharp.Creational_Patterns.Builder;
-using DesignPatterns_For_CSharp.Creational_Patterns.Factory_Method;
-using DesignPatterns_For_CSharp.Creational_Patterns.Prototype;
-using DesignPatterns_For_CSharp.Creational_Patterns.Singleton;
-
-//-------------------------------------------------------------- 
-
-using DesignPatterns_For_CSharp.Structural_Patterns.Adapter;
-using DesignPatterns_For_CSharp.Structural_Patterns.Bridge;
-using DesignPatterns_For_CSharp.Structural_Patterns.Composite;
-using DesignPatterns_For_CSharp.Structural_Patterns.Decorator;
-using DesignPatterns_For_CSharp.Structural_Patterns.Facade;
-using DesignPatterns_For_CSharp.Structural_Patterns.Flyweight;
-using DesignPatterns_For_CSharp.Structural_Patterns.Proxy;
-
 //-------------------------------------------------------------- 
 
 using DesignPatterns_For_CSharp.Behavioral_Patterns.ChainOfResponsibility;
@@ -55,11 +39,23 @@ using DesignPatterns_For_CSharp.Behavioral_Patterns.State;
 using DesignPatterns_For_CSharp.Behavioral_Patterns.Strategy;
 using DesignPatterns_For_CSharp.Behavioral_Patterns.Template_Method;
 using DesignPatterns_For_CSharp.Behavioral_Patterns.Visitor;
-
+using DesignPatterns_For_CSharp.Creational_Patterns.Abstract_Factory;
+using DesignPatterns_For_CSharp.Creational_Patterns.Builder;
+using DesignPatterns_For_CSharp.Creational_Patterns.Factory_Method;
+using DesignPatterns_For_CSharp.Creational_Patterns.Prototype;
+using DesignPatterns_For_CSharp.Creational_Patterns.Singleton;
 //-------------------------------------------------------------- 
 
 using DesignPatterns_For_CSharp.Extend_Patterns;
+//-------------------------------------------------------------- 
 
+using DesignPatterns_For_CSharp.Structural_Patterns.Adapter;
+using DesignPatterns_For_CSharp.Structural_Patterns.Bridge;
+using DesignPatterns_For_CSharp.Structural_Patterns.Composite;
+using DesignPatterns_For_CSharp.Structural_Patterns.Decorator;
+using DesignPatterns_For_CSharp.Structural_Patterns.Facade;
+using DesignPatterns_For_CSharp.Structural_Patterns.Flyweight;
+using DesignPatterns_For_CSharp.Structural_Patterns.Proxy;
 //-------------------------------------------------------------- 
 
 using System;
